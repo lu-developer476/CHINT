@@ -1,3 +1,50 @@
-¡Te doy la bienvenida, querido/a lector/a. En éste sitio web, explorarás temas fascinantes en la intersección entre la humanidad, la ciencia, la tecnología y la naturaleza!
+CHINT
 
-La intersección entre la humanidad, la ciencia, la tecnología y la naturaleza es un campo vasto y dinámico que ha definido la evolución de nuestra sociedad desde tiempos inmemoriales. La ciencia, como el proceso sistemático de descubrimiento y conocimiento, ha proporcionado a la humanidad herramientas y entendimientos que han transformado radicalmente nuestras vidas. Por otro lado, la tecnología, como la aplicación práctica de estos conocimientos científicos, ha modificado la manera en que trabajamos, nos comunicamos y entendemos el mundo que nos rodea. El estudio de la humanidad, la ciencia, la tecnología y la naturaleza no solo abarca avances científicos y desarrollos tecnológicos, sino que también explora cómo estos avances afectan y son moldeados por las culturas, economías y sistemas políticos. Desde la revolución industrial hasta la era digital, cada avance tecnológico ha provocado cambios sociales profundos, redefiniendo la forma en que vivimos y nos relacionamos.
+Ciencia, IA, Humanidad, Naturaleza y Tecnología
+
+CHINT es un proyecto web desarrollado desde cero con HTML5 y CSS3, enfocado en el análisis de la convergencia entre inteligencia artificial, automatización cognitiva, biotecnología y transformación social.
+
+La plataforma propone un espacio de reflexión estructurado, combinando contenido conceptual con una arquitectura frontend limpia, navegación optimizada y diseño responsivo.
+
+🚀 Tecnologías utilizadas
+
+HTML5 semántico
+
+CSS3 moderno
+
+Flexbox y Grid
+
+Variables CSS
+
+Diseño responsive
+
+Deployment con GitHub + Netlify
+
+📁 Estructura del proyecto
+/
+├── index.html
+├── /pages
+│   ├── bibliography.html
+│   ├── assessment.html
+│   ├── contact.html
+├── /css
+│   └── styles.css
+
+
+La arquitectura está organizada por secciones independientes, permitiendo escalabilidad y mantenimiento sencillo.
+
+🎯 Objetivos del proyecto
+
+Construcción completa desde cero sin frameworks
+
+Aplicación de buenas prácticas de estructura semántica
+
+Implementación de navegación clara y consistente
+
+Diseño visual moderno con identidad propia
+
+Despliegue profesional en entorno productivo
+
+🌐 Deploy
+
+El proyecto se encuentra publicado y accesible en producción a través de Netlify.
