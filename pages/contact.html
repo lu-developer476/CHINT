@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHINT | Contacto</title>
+  <meta name="description" content="Contacto y redes profesionales de CHINT.">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <ul class="tabla-de-contenidos-interna">
+      <li class="grid-item-interno"><a href="../index.html">Inicio</a></li>
+      <li class="grid-item-interno"><a href="gallery.html">Galería</a></li>
+      <li class="grid-item-interno"><a href="assessment.html">Opinión</a></li>
+      <li class="grid-item-interno"><a href="bibliography.html">Fuentes</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="contacto-section">
+
+    <h2>Redes y Contacto</h2>
+
+    <div class="referencias-personales">
+
+      <a href="https://github.com/lu-developer476" target="_blank" rel="noopener noreferrer">
+        <strong>GitHub</strong>
+      </a>
+
+      <a href="https://www.linkedin.com/in/lucas-montenegro-burgos/" target="_blank" rel="noopener noreferrer">
+        <strong>LinkedIn</strong>
+      </a>
+
+      <a href="mailto:lucasmontenegroburgos@gmail.com">
+        <strong>Email</strong>
+      </a>
+
+    </div>
+
+    <div class="img-container contacto-img">
+      <img src="../img/imagen-cuatro.jpg" alt="Conexión humana">
+      <img src="../img/imagen-seis.jpg" alt="Interacción tecnológica">
+    </div>
+
+  </section>
+
+  <section class="encuesta-section">
+  
+    <form 
+      class="form-encuesta" 
+      name="contacto-chint" 
+      method="POST" 
+      data-netlify="true"
+    >
+      
+      <input type="hidden" name="form-name" value="contacto-chint">
+  
+      <p class="gracias"><strong>Gracias por tu visita.</strong></p>
+  
+      <div class="form-group">
+        <label for="opinion">¿Te gustó CHINT?</label>
+        <select name="opinion" id="opinion" required>
+          <option value="">Seleccionar</option>
+          <option value="Si">Sí</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Mail:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="nombre">Nombre y apellido:</label>
+        <input type="text" name="nombre" id="nombre" required>
+      </div>
+  
+      <div class="form-group full">
+        <label for="mensaje">Comentarios:</label>
+        <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+      </div>
+  
+      <div class="form-group full">
+        <button type="submit">Enviar</button>
+      </div>
+  
+    </form>
+  
+  </section>
+
+</main>
+
+<footer>
+  <h6>&copy; 2026 - CHINT - Todos los derechos reservados | <address>Lucas Leonel Montenegro Burgos</address></h6>
+</footer>
+
+</body>
+</html>
