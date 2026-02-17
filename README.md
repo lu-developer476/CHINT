@@ -60,10 +60,6 @@ CHINT/
 
 El proyecto se encuentra desplegado y accesible online:
 
-👉 [Ver sitio en producción](#)
-
-_(Reemplazar con el link real del deploy)_
-
 ---
 
 ## 🧠 Objetivo Académico y Profesional
