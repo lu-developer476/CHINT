@@ -20,6 +20,19 @@ El objetivo del proyecto es construir una experiencia web clara, estructurada y 
 
 ## 📁 Estructura del Proyecto
 
+```
+CHINT/
+│
+├── index.html
+├── css/
+│   └── styles.css
+├── pages/
+│   ├── bibliography.html
+│   ├── assessment.html
+│   └── contact.html
+└── assets/
+```
+
 CHINT/
 │
 ├── index.html
