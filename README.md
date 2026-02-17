@@ -1,49 +1,72 @@
-CHINT
+# CHINT
 
-Ciencia, IA, Humanidad, Naturaleza y Tecnología
+## Ciencia, IA, Humanidad, Naturaleza y Tecnología
 
-CHINT es un proyecto web desarrollado desde cero con HTML5 y CSS3, enfocado en el análisis de la convergencia entre inteligencia artificial, automatización cognitiva, biotecnología y transformación social.
+CHINT es un proyecto web desarrollado desde cero que explora la convergencia entre inteligencia artificial, automatización, biotecnología y el impacto tecnológico en la vida humana contemporánea.
 
-La plataforma propone un espacio de reflexión estructurado, combinando contenido conceptual con una arquitectura frontend limpia, navegación optimizada y diseño responsivo.
+El objetivo del proyecto es construir una experiencia web clara, estructurada y semánticamente correcta, aplicando buenas prácticas de desarrollo frontend y despliegue profesional.
 
-🚀 Tecnologías utilizadas
+---
 
-HTML5 semántico
+## 🚀 Tecnologías Utilizadas
 
-CSS3 moderno
+- HTML5 semántico
+- CSS3 moderno (Flexbox / Grid)
+- Responsive Design
+- Git & GitHub
+- Deploy en Netlify / Vercel
 
-Flexbox y Grid
+---
 
-Variables CSS
+## 📁 Estructura del Proyecto
 
-Diseño responsive
-
-Deployment con GitHub + Netlify
-
-📁 Estructura del proyecto
-/
+CHINT/
+│
 ├── index.html
-├── /pages
-│   ├── bibliography.html
-│   ├── assessment.html
-│   ├── contact.html
-├── /css
-│   └── styles.css
+├── css/
+│ └── styles.css
+├── pages/
+│ ├── bibliography.html
+│ ├── assessment.html
+│ └── contact.html
+└── assets/
 
-La arquitectura está organizada por secciones independientes, permitiendo escalabilidad y mantenimiento sencillo.
+---
 
-🎯 Objetivos del proyecto
+## 🎯 Características
 
-Construcción completa desde cero sin frameworks
+- Navegación estructurada y coherente entre páginas
+- Diseño responsivo adaptable a distintos dispositivos
+- Layout moderno utilizando Flexbox y Grid
+- Código organizado y mantenible
+- Despliegue continuo desde repositorio GitHub
 
-Aplicación de buenas prácticas de estructura semántica
+---
 
-Implementación de navegación clara y consistente
+## 🌐 Deploy
 
-Diseño visual moderno con identidad propia
+El proyecto se encuentra desplegado y accesible online:
 
-Despliegue profesional en entorno productivo
+👉 [Ver sitio en producción](#)
 
-🌐 Deploy
+_(Reemplazar con el link real del deploy)_
 
-El proyecto se encuentra publicado y accesible en producción a través de Netlify.
+---
+
+## 🧠 Objetivo Académico y Profesional
+
+Este proyecto fue realizado como ejercicio integral de desarrollo frontend, aplicando conceptos de:
+
+- Arquitectura básica de sitios web estáticos
+- Organización de carpetas y estructura de proyecto
+- Estilos reutilizables y diseño consistente
+- Publicación y hosting profesional
+
+---
+
+## 📌 Estado del Proyecto
+
+✔ Finalizado  
+🔄 Posibles mejoras futuras: optimización SEO, animaciones sutiles, mejora de accesibilidad y performance.
+
+---
