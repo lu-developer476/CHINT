@@ -30,7 +30,6 @@ Deployment con GitHub + Netlify
 ├── /css
 │   └── styles.css
 
-
 La arquitectura está organizada por secciones independientes, permitiendo escalabilidad y mantenimiento sencillo.
 
 🎯 Objetivos del proyecto
