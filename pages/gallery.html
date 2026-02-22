@@ -45,8 +45,14 @@
 </main>
 
 <footer>
-  <h6>&copy; 2026 - CHINT - Todos los derechos reservados | <address>Lucas Leonel Montenegro Burgos</address></h6>
+<h6>
+  <span>©</span> <span id="year"></span> Todos los derechos reservados • Built with HTML5, CSS3 • Deployed on Netlify ®
+</h6>
 </footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
