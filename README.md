@@ -30,7 +30,7 @@ CHINT/
 │   ├── bibliography.html
 │   ├── assessment.html
 │   └── contact.html
-└── assets/
+└── images/
 ```
 
 CHINT/
