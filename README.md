@@ -30,6 +30,8 @@ El objetivo del proyecto es construir una experiencia web clara, estructurada y 
 CHINT/
 │
 ├── index.html
+├── README.md
+├── LICENSE
 ├── css/
 │   └── styles.css
 ├── pages/
