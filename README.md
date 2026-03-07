@@ -34,12 +34,12 @@ CHINT/
 ├── LICENSE
 ├── css/
 │   └── styles.css
+└── images/
 ├── pages/
 │   ├── assessment.html
 │   ├── bibliography.html
 │   ├── contact.html
 │   └── gallery.html
-└── images/
 ```
 ---
 
