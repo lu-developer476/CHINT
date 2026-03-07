@@ -38,18 +38,6 @@ CHINT/
 │   └── contact.html
 └── images/
 ```
-
-CHINT/
-│
-├── index.html
-├── css/
-│ └── styles.css
-├── pages/
-│ ├── bibliography.html
-│ ├── assessment.html
-│ └── contact.html
-└── assets/
-
 ---
 
 ## 🎯 Características
