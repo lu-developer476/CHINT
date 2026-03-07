@@ -33,8 +33,9 @@ CHINT/
 ├── css/
 │   └── styles.css
 ├── pages/
-│   ├── bibliography.html
 │   ├── assessment.html
+│   ├── bibliography.html
+│   ├── gallery.html
 │   └── contact.html
 └── images/
 ```
