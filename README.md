@@ -35,8 +35,8 @@ CHINT/
 ├── pages/
 │   ├── assessment.html
 │   ├── bibliography.html
-│   ├── gallery.html
-│   └── contact.html
+│   ├── contact.html
+│   └── gallery.html
 └── images/
 ```
 ---
