@@ -1,10 +1,10 @@
 # CHINT
 
-![HTML5](https://img.shields.io/badge/html-5-orange)
-![CSS3](https://img.shields.io/badge/css-3-blue)
-![Responsive](https://img.shields.io/badge/design-responsive-green)
-![Deploy](https://img.shields.io/badge/deploy-netlify%2Fvercel-black)
-![License](https://img.shields.io/badge/license-MIT-purple)
+![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Responsive Design](https://img.shields.io/badge/Responsive-Design-38B2AC?style=for-the-badge)
+![Netlify](https://img.shields.io/badge/Netlify-Deploy-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)
 
 ## Ciencia, IA, Humanidad, Naturaleza y Tecnología
 
