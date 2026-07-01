@@ -18,6 +18,18 @@
   --transition: 0.25s ease;
 }
 
+body.light-theme {
+  --bg-main: radial-gradient(circle at top left, #f7f2ff, #eef4ff);
+  --bg-card: #ffffff;
+  --bg-soft: #f0eafa;
+  --border-color: #d7c7f3;
+  --accent: #5b21b6;
+  --accent-light: #7c3cff;
+  --text-main: #181225;
+  --text-soft: #3f3850;
+}
+
+
 /* ================================= */
 /* RESET */
 /* ================================= */
@@ -108,6 +120,37 @@ nav a {
 
 nav a:hover {
   color: var(--accent-light);
+}
+
+.site-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-top: -0.5rem;
+}
+
+.control-button {
+  cursor: pointer;
+  background: var(--bg-soft);
+  color: var(--accent);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 0.7rem 0.9rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.control-button:hover,
+.control-button:focus-visible {
+  color: var(--accent-light);
+  box-shadow: 0 0 10px rgba(124, 60, 255, 0.3);
+  transform: translateY(-3px);
+  outline: none;
 }
 
 /* ================================= */
@@ -321,7 +364,7 @@ section ul li a:hover {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #111120;
+  background: var(--bg-soft);
   font-size: 0.75rem;
 }
 
