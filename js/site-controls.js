@@ -17,7 +17,6 @@
     'Modo oscuro': 'Dark mode',
     'Idiomas': 'Languages',
     'Modo': 'Mode',
-    'Todos los derechos reservados • Hecho con HTML5 y CSS3 • Desplegado en Netlify ®': 'All rights reserved • Built with HTML5 and CSS3 • Deployed on Netlify ®',
 
     // Inicio
     'Ciencia, IA, Humanidad, Naturaleza y Tecnología biomecánica': 'Science, AI, Humanity, Nature and Biomechanical Technology',
