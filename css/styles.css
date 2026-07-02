@@ -19,14 +19,14 @@
 }
 
 body.light-theme {
-  --bg-main: radial-gradient(circle at top left, #f7f2ff, #eef4ff);
-  --bg-card: #ffffff;
-  --bg-soft: #f0eafa;
-  --border-color: #d7c7f3;
-  --accent: #5b21b6;
-  --accent-light: #7c3cff;
-  --text-main: #181225;
-  --text-soft: #3f3850;
+  --bg-main: radial-gradient(circle at top left, #f3e4c7, #d2b48c 52%, #8b6f47);
+  --bg-card: #f8eedc;
+  --bg-soft: #ead7b7;
+  --border-color: #8a6338;
+  --accent: #5a3516;
+  --accent-light: #9b6f2f;
+  --text-main: #0b0b0b;
+  --text-soft: #4b2f14;
 }
 
 
@@ -108,6 +108,11 @@ nav li:hover {
   transform: translateY(-3px);
 }
 
+body.light-theme nav li:hover {
+  background: #dec69d;
+  box-shadow: 0 0 10px rgba(90, 53, 22, 0.28);
+}
+
 nav a {
   color: var(--accent);
   text-transform: uppercase;
@@ -151,6 +156,12 @@ nav a:hover {
   box-shadow: 0 0 10px rgba(124, 60, 255, 0.3);
   transform: translateY(-3px);
   outline: none;
+}
+
+body.light-theme .control-button:hover,
+body.light-theme .control-button:focus-visible {
+  background: #dec69d;
+  box-shadow: 0 0 10px rgba(90, 53, 22, 0.28);
 }
 
 /* ================================= */
@@ -202,6 +213,22 @@ blockquote {
   font-size: 0.9rem;
 }
 
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5,
+body.light-theme h6,
+body.light-theme label,
+body.light-theme strong {
+  color: #0b0b0b;
+}
+
+body.light-theme p,
+body.light-theme blockquote {
+  color: #4b2f14;
+}
+
 /* ================================= */
 /* LISTAS EN SECTIONS (BIBLIOGRAFÍA) */
 /* ================================= */
@@ -223,6 +250,10 @@ section ul li {
 
 section ul li:hover {
   background: #24243a;
+}
+
+body.light-theme section ul li:hover {
+  background: #dec69d;
 }
 
 section ul li a {
