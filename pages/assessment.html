@@ -19,9 +19,18 @@
       <li class="grid-item-interno"><a href="bibliography.html">Fuentes</a></li>
       <li class="grid-item-interno"><a href="contact.html">Contacto</a></li>
     </ul>
-    <div class="site-controls" aria-label="Controles del sitio">
-      <button class="control-button" type="button" data-language-toggle>🇪🇸/🇺🇸</button>
-      <button class="control-button" type="button" data-theme-toggle>Modo claro</button>
+    <div class="site-controls" aria-label="Controles del sitio" data-site-controls>
+      <button class="control-button menu-toggle" type="button" aria-expanded="false" aria-label="Abrir controles" data-controls-menu-toggle>☰</button>
+      <div class="controls-menu" data-controls-menu>
+        <div class="controls-menu-group" aria-label="Idiomas">
+          <span class="controls-menu-title">Idiomas</span>
+          <button class="control-button" type="button" data-language-toggle>🇪🇸/🇺🇸</button>
+        </div>
+        <div class="controls-menu-group" aria-label="Tema">
+          <span class="controls-menu-title">Modo</span>
+          <button class="control-button" type="button" data-theme-toggle>Modo claro</button>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
