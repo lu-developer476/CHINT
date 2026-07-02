@@ -128,12 +128,32 @@ nav a:hover {
 }
 
 .site-controls {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
   flex-wrap: wrap;
   margin-top: -0.5rem;
+}
+
+.controls-menu {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.controls-menu-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls-menu-title,
+.menu-toggle {
+  display: none;
 }
 
 .control-button {
@@ -162,6 +182,64 @@ body.light-theme .control-button:hover,
 body.light-theme .control-button:focus-visible {
   background: #dec69d;
   box-shadow: 0 0 10px rgba(90, 53, 22, 0.28);
+}
+
+
+@media (max-width: 1199px) {
+  .site-controls {
+    width: fit-content;
+    margin: -0.5rem auto 0;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3rem;
+    font-size: 1rem;
+  }
+
+  .controls-menu {
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    right: 50%;
+    z-index: 10;
+    display: none;
+    width: min(18rem, calc(100vw - 2rem));
+    padding: 0.8rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    transform: translateX(50%);
+  }
+
+  .site-controls.menu-open .controls-menu {
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .controls-menu-group {
+    display: grid;
+    gap: 0.45rem;
+    padding: 0.7rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+  }
+
+  .controls-menu-title {
+    display: block;
+    color: var(--text-soft);
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+
+  .controls-menu .control-button {
+    width: 100%;
+  }
 }
 
 /* ================================= */

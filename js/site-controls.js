@@ -1,6 +1,8 @@
 (function () {
   const themeToggle = document.querySelector('[data-theme-toggle]');
   const languageToggle = document.querySelector('[data-language-toggle]');
+  const siteControls = document.querySelector('[data-site-controls]');
+  const controlsMenuToggle = document.querySelector('[data-controls-menu-toggle]');
   const savedTheme = localStorage.getItem('chint-theme') || 'dark';
   const savedLanguage = localStorage.getItem('chint-language') || 'es';
 
@@ -12,6 +14,8 @@
     'Inicio': 'Home',
     'Modo claro': 'Light mode',
     'Modo oscuro': 'Dark mode',
+    'Idiomas': 'Languages',
+    'Modo': 'Mode',
     'Todos los derechos reservados • Built with HTML5 & CSS3 • Deployed on Netlify ®': 'All rights reserved • Built with HTML5 & CSS3 • Deployed on Netlify ®',
     'Ciencia, IA, Humanidad, Naturaleza y Tecnología biomecánica': 'Science, AI, Humanity, Nature and Biomechanical Technology',
     'Inteligencia Artificial como infraestructura social': 'Artificial Intelligence as Social Infrastructure',
@@ -46,7 +50,7 @@
     Object.entries(translations).map(([spanish, english]) => [english, spanish])
   );
 
-  const translatableSelector = 'a, h1, h2, h3, h4, h5, h6, p, strong, label, option, button:not([data-language-toggle]):not([data-theme-toggle])';
+  const translatableSelector = 'a, h1, h2, h3, h4, h5, h6, p, strong, label, option, span, button:not([data-language-toggle]):not([data-theme-toggle]):not([data-controls-menu-toggle])';
 
   function translateTextNode(node, language) {
     const dictionary = language === 'en' ? translations : reverseTranslations;
@@ -81,6 +85,21 @@
     }
   }
 
+  function setControlsMenu(open) {
+    if (!siteControls || !controlsMenuToggle) {
+      return;
+    }
+
+    siteControls.classList.toggle('menu-open', open);
+    controlsMenuToggle.setAttribute('aria-expanded', String(open));
+    controlsMenuToggle.setAttribute(
+      'aria-label',
+      open
+        ? (document.documentElement.lang === 'en' ? 'Close controls' : 'Cerrar controles')
+        : (document.documentElement.lang === 'en' ? 'Open controls' : 'Abrir controles')
+    );
+  }
+
   function applyLanguage(language) {
     document.documentElement.lang = language;
     document.querySelectorAll(translatableSelector).forEach(function (element) {
@@ -97,6 +116,10 @@
     }
 
     applyTheme(localStorage.getItem('chint-theme') || 'dark');
+
+    if (controlsMenuToggle) {
+      setControlsMenu(siteControls.classList.contains('menu-open'));
+    }
   }
 
   applyTheme(savedTheme);
@@ -117,4 +140,22 @@
       applyLanguage(nextLanguage);
     });
   }
+
+  if (controlsMenuToggle) {
+    controlsMenuToggle.addEventListener('click', function () {
+      setControlsMenu(!siteControls.classList.contains('menu-open'));
+    });
+  }
+
+  document.addEventListener('click', function (event) {
+    if (siteControls && !siteControls.contains(event.target)) {
+      setControlsMenu(false);
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+      setControlsMenu(false);
+    }
+  });
 })();
