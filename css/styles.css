@@ -606,23 +606,45 @@ header nav .controls-menu .control-button {
     gap: 0.55rem;
   }
 
+  /* El grupo de navegación conserva su ancho y forma una cuadrícula real. */
   header nav ul {
-    gap: 0.35rem;
-    flex-basis: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex: 1 1 auto;
+    width: auto;
+    max-width: 25rem;
+    min-width: 0;
+    gap: 0.4rem;
+    padding: 0.45rem;
+    margin: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
   }
 
   header nav li {
-    padding: 0.4rem 0.35rem;
+    min-width: 0;
+    padding: 0.55rem 0.4rem;
+    border-radius: 7px;
   }
 
   header nav a {
-    font-size: 0.64rem;
+    display: block;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    font-size: 0.68rem;
     letter-spacing: 0.25px;
+    line-height: 1.25;
+  }
+
+  header nav .site-controls {
+    flex: 0 0 auto;
+    margin: 0;
   }
 
   header nav .menu-toggle {
-    min-width: 2.25rem;
-    min-height: 2.25rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
     padding: 0.35rem 0.5rem;
   }
 }
